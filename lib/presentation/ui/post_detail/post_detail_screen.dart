@@ -32,6 +32,7 @@ class _PostDetailScreenState extends State<PostDetailScreen> {
       body: Column(
         children: [
           const FlutterLogo(size: 60,),
+          const SizedBox(height: 10,),
           Text(widget.post.title,),
           const SizedBox(height: 40,),
           FutureBuilder(
