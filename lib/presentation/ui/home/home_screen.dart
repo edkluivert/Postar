@@ -9,6 +9,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Postar'),
+      ),
       body: FutureBuilder(
         future: Provider.of<HomeProvider>(context, listen: false).fetchPosts(),
         builder: (context, snapshot) {
